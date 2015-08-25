@@ -1,0 +1,63 @@
+﻿<!-- 
+  Microsoft Visual Studio 2005 Web Deployment Project 
+  http://go.microsoft.com/fwlink/?LinkId=55111
+-->
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.51103</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{139B437C-600E-46B0-8AC6-D938A6D1FEC4}</ProjectGuid>
+    <SourceWebPhysicalPath>..\TBH_Web</SourceWebPhysicalPath>
+    <SourceWebProject>{57EF9159-E815-4DF2-AE8E-8688F481C244}|C:\Projects\ASP.NET\TheBeerHouse</SourceWebProject>
+    <SourceWebVirtualPath>/TheBeerHouse</SourceWebVirtualPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\Debug</OutputPath>
+    <EnableUpdateable>false</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>MB.TheBeerHouse</SingleAssemblyName>
+    <DeleteAppCodeCompiledFiles>false</DeleteAppCodeCompiledFiles>
+    <UseWebConfigReplacement>false</UseWebConfigReplacement>
+    <ValidateWebConfigReplacement>true</ValidateWebConfigReplacement>
+    <DeleteAppDataFolder>true</DeleteAppDataFolder>
+    <ContentAssemblyName>
+    </ContentAssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\Release</OutputPath>
+    <EnableUpdateable>false</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>MB.TheBeerHouse</SingleAssemblyName>
+    <UseWebConfigReplacement>false</UseWebConfigReplacement>
+    <ValidateWebConfigReplacement>true</ValidateWebConfigReplacement>
+    <DeleteAppDataFolder>true</DeleteAppDataFolder>
+  </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TheBeerHouse\TBHCustomEvents\TBHCustomEvents.csproj">
+      <Project>{0C021C6D-B110-4F5A-9D52-F8DB244553D6}</Project>
+      <Name>TBHCustomEvents</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WebDeployment\v8.0\Microsoft.WebDeployment.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.WebDeployment.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="BeforeMerge">
+  </Target>
+  <Target Name="AfterMerge">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
